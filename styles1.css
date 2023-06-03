@@ -1,0 +1,55 @@
+html,body{
+        margin: 0;
+        background-color: rgb(162, 156, 244);
+      }
+      nav {
+              background-color: rgb(111, 107, 167);
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+              margin-bottom: 30px;
+            }
+            
+            nav ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              display: flex; /* Use flexbox */
+              justify-content: center;
+              align-items: center;
+              height: 100%;
+              color: rgb(30, 30, 31);
+            }
+            
+            nav li {
+              display: inline-block; /* Use inline-block instead of float */
+            }
+            
+            nav li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 10px 10px;
+              text-decoration: none;
+              color: rgb(30, 30, 31);
+              font-size: x-large;
+            }
+            
+            nav li a:hover {
+              background-color: #111;
+              color: aliceblue;
+            }
+            .container {
+                display: flex;
+            }
+            
+            .sketchfab-embed-wrapper {
+                flex: 1;
+                margin-right: 20px;
+            }
+            
+            .di {
+                flex: 1;
+            }
+            
+            /* Add additional styling as needed */
+            
