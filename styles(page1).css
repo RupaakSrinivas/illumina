@@ -1,0 +1,93 @@
+html,body{
+  margin: 0;
+  background-color: rgb(162, 156, 244);
+}
+nav {
+        background-color: rgb(111, 107, 167);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      }
+      
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex; /* Use flexbox */
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        color: rgb(30, 30, 31);
+      }
+      
+      nav li {
+        display: inline-block; /* Use inline-block instead of float */
+      }
+      
+      nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: none;
+        color: rgb(30, 30, 31);
+        font-size: x-large;
+      }
+      
+      nav li a:hover {
+        background-color: #111;
+        color: aliceblue;
+      }
+.sp{
+  justify-content: left;
+  align-items: left;
+}
+
+button:hover{
+  background: linear-gradient(90deg,rgb(181, 163, 255),rgb(181, 163, 255),aliceblue,rgb(181, 163, 255));
+  background-size: 400%;
+  color: rgb(28, 28, 28)
+}
+button:hover{
+  z-index:1;
+  animation: glow 8s linear infinite;
+}
+@keyframes glow {
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
+}
+button{
+  height: 250px;
+  width: 400px;
+  margin: 50px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background: #111;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 16px;
+}
+.button-container {
+  margin-left: 250px;
+  margin-right: 250px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.grid-button {
+  padding: 10px;
+  border: none;
+  text-align: center;
+  font-size: 200%;
+}
+
