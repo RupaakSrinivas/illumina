@@ -1,205 +1,47 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles1.css">
-    <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            const powerToggle = document.querySelector('.power_input');
-            const frequencyInput = document.getElementById('frequency');
-            const tensionInput = document.getElementById('tension');
-            const massInput = document.getElementById('mass');
-            const resonatingLengthInput = document.getElementById('resonating_length');
-            const resultContainer = document.getElementById('result');
-
-            powerToggle.addEventListener('change', () => {
-                calculateAverageFrequency();
-            });
-
-            // Calculate average frequency on page load if power is initially on
-            if (powerToggle.checked) {
-                calculateAverageFrequency();
-            }
-
-            function calculateAverageFrequency() {
-                const frequency = parseFloat(frequencyInput.value);
-                const tension = parseFloat(tensionInput.value);
-                const mass = parseFloat(massInput.value);
-                const resonatingLength = parseFloat(resonatingLengthInput.value);
-
-                // Perform calculations
-                const averageFrequency = (1 / (2 * Math.PI)) * Math.sqrt(tension / (mass / resonatingLength));
-                console.log(frequency, tension, mass, resonatingLength);
-                resultContainer.innerHTML = `Average Frequency: ${averageFrequency.toFixed(2)}`;
-            }
-        });
-
-
-    </script>
-</head>
-
-<body>
-    <nav>
-        <ul>
-            <span id="sp">
-                <li><a href="./home.html"><img src="./Screenshot 2023-06-03 041305.png" width="50"></a></li>
-            </span>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <div class="sketchfab-embed-wrapper">
-            <iframe title="Sonometer" frameborder="0" allowfullscreen mozallowfullscreen="true"
-                webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
-                execution-while-out-of-viewport execution-while-not-rendered web-share
-                src="https://sketchfab.com/models/6a90d1db4ace433fb82ef9f32670791a/embed?autostart=1&preload=1"
-                height="600px" width="100%"></iframe>
-        </div>
-        <div class="di">
-            <ul
-                style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-                <!-- Instructions here -->
-                
-            </ul>
-        </div>
-    </div>
-    <div class="al">
-        <form action="/submit_data" method="post" class="input_form">
-            
-        </form>
-    </div>
-</body>
-
-</html>
-
- -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles1.css">
-    <style>
-        .container {
-            position: relative;
-        }
-
-        .input_form {
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: white;
-            padding: 20px;
-            z-index: 3;
-        }
-
-        .sketchfab-embed-wrapper {
-            margin-top: 70px; /* Adjust the margin-top value as needed */
-        }
-    </style>
-    <script>
-        // JavaScript code here
-    </script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./styles1.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <span id="sp">
-                <li><a href="./home.html"><img src="./Screenshot 2023-06-03 041305.png" width="50"></a></li>
-            </span>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <form action="/submit_data" method="post" class="input_form">
-            <!-- Input fields and labels here -->
-            <label class="switch">
-                <input type="checkbox" class="power_input" id="power_input">
-                <span class="slider round"></span>
-            </label>
-            <label for="power_input">Power</label>
-
-            <div>
-                <label for="frequency">Frequency:</label>
-                <input type="number" id="frequency" step="0.01">
+        <nav>
+                <ul>
+                  <span id="sp"><li><a href="./home.html"><img src="./Screenshot 2023-06-03 041305.png" width="50"></a></li></span>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+        </nav>
+        <div class="container">
+            <div class="sketchfab-embed-wrapper">
+                <iframe title="Sonometer" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/6a90d1db4ace433fb82ef9f32670791a/embed?autostart=1&preload=1" height="600px" width="100%"></iframe>
             </div>
-            <div>
-                <label for="tension">Tension:</label>
-                <input type="number" id="tension" step="0.01">
+            <div class="di">
+                <ul style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                        <li>Place the sonometer box on top of your  dry lab workbench in your physics practical class. Place it in a way so that the end with the pulley is flush with the open side of the table, so that something can hang from the pulley.</li>
+                        <li>Get the wire you have to experiment with and verify that you have enough length of it. You’ll need about one and a half meters of it. The teacher will already know the mass per unit length of the material of the wire, but you may have to figure it out yourself using a scale and  a precision balance . </li>
+                        <li>Attach one end of the wire to the hook at the end of the sonometer apparatus. Make sure it is strongly attached.</li>
+                        <li>Attach the weight hanger to the other end of the wire.
+                                Sling the wire over the pulley on the other end of the sonometer. Place a little weight on the weight hanger so that the wire is stretched tightly over the wood box.
+                                </li>
+                        <li>Place the bridges on the sonometer, under the wire, so that they hold up the wire between them and the wire is stretched tightly between them. Pull them apart to the positions farthest from each other (at the end of the scale).</li>
+                        <li>Take your notebook and prepare two tables like those given below. You can note all your experiment data here.
+                                Put a good amount of weight in the weight hanger</li>
+                        <li>Take a small rectangular piece of paper (about the length of your finger) and fold it to make it an inverted V. Mount it in the middle of the wire so it hangs there loosely.</li>
+                        <li>Take a tuning fork and note down its frequency.
+                                Hit the tuning fork with the rubber pad to set it vibrating.</li>
+                        <li>Touch the handle of the vibrating tuning fork to the sonometer box. The wire will start vibrating in response to the vibrations coming from the tuning fork.
+                                If the tuning fork and the wire are vibrating at the same frequency, the wire will vibrate at maximum strength and will throw off the paper, producing a loud noise. This is called resonance. </li>
+                        <li>Move one of the bridges to change the length of the wire. At one point, the length will hit the sweet spot and the wire will resonate with the tuning fork.</li>
+                        <li>Note down the positions of the bridges from the scale beside them. Also note the weight.
+                                Vary the weight and perform the same process again and again, to get some satisfactory results with the same tuning fork.</li>
+                        <li>Now keep a good amount of weight fixed in the hanger (we recommend 1 kg for a steel wire). With that unchanged, use up all the other tuning forks from the set and do the same process.</li>
+                </ul>
             </div>
-            <div>
-                <label for="mass">Mass Suspended from Hanger:</label>
-                <input type="number" id="mass" step="0.01">
-            </div>
-            <div>
-                <label for="resonating_length">Resonating Length:</label>
-                <input type="number" id="resonating_length" step="0.01">
-            </div>
-            <button type="button" onclick="calculateAverageFrequency()">Calculate</button>
-            <div id="result"></div>
-        </form>
-        <div class="sketchfab-embed-wrapper">
-            <iframe title="Sonometer" frameborder="0" allowfullscreen mozallowfullscreen="true"
-                webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
-                execution-while-out-of-viewport execution-while-not-rendered web-share
-                src="https://sketchfab.com/models/6a90d1db4ace433fb82ef9f32670791a/embed?autostart=1&preload=1"
-                height="600px" width="100%"></iframe>
         </div>
-    </div>
-    <div class="di">
-        <ul
-            style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-            <!-- Instructions here -->
-            <li>Place the sonometer box on top of your dry lab workbench in your physics practical class. Place it
-                in a way so that the end with the pulley is flush with the open side of the table, so that something
-                can hang from the pulley.</li>
-            <li>Get the wire you have to experiment with and verify that you have enough length of it. You'll need
-                about one and a half meters of it. The teacher will already know the mass per unit length of the
-                material of the wire, but you may have to figure it out yourself using a scale and a precision
-                balance . </li>
-            <li>Attach one end of the wire to the hook at the end of the sonometer apparatus. Make sure it is
-                strongly attached.</li>
-            <li>Attach the weight hanger to the other end of the wire.
-                Sling the wire over the pulley on the other end of the sonometer. Place a little weight on the
-                weight hanger so that the wire is stretched tightly over the wood box.
-            </li>
-            <li>Place the bridges on the sonometer, under the wire, so that they hold up the wire between them and
-                the wire is stretched tightly between them. Pull them apart to the positions farthest from each
-                other (at the end of the scale).</li>
-            <li>Take your notebook and prepare two tables like those given below. You can note all your experiment
-                data here.
-                Put a good amount of weight in the weight hanger</li>
-            <li>Take a small rectangular piece of paper (about the length of your finger) and fold it to make it an
-                inverted V. Mount it in the middle of the wire so it hangs there loosely.</li>
-            <li>Take a tuning fork and note down its frequency.
-                Hit the tuning fork with the rubber pad to set it vibrating.</li>
-            <li>Touch the handle of the vibrating tuning fork to the sonometer box. The wire will start vibrating in
-                response to the vibrations coming from the tuning fork.
-                If the tuning fork and the wire are vibrating at the same frequency, the wire will vibrate at
-                maximum strength and will throw off the paper, producing a loud noise. This is called resonance.
-            </li>
-            <li>Move one of the bridges to change the length of the wire. At one point, the length will hit the
-                sweet spot and the wire will resonate with the tuning fork.</li>
-            <li>Note down the positions of the bridges from the scale beside them. Also note the weight.
-                Vary the weight and perform the same process again and again, to get some satisfactory results with
-                the same tuning fork.</li>
-            <li>Now keep a good amount of weight fixed in the hanger (we recommend 1 kg for a steel wire). With that
-                unchanged, use up all the other tuning forks from the set and do the same process.</li>
-        </ul>
-    </div>
-    <div class="al">
-        <!-- Rest of the content here -->
-    </div>
 </body>
 </html>
